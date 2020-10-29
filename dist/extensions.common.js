@@ -939,7 +939,7 @@ class OrderedList extends tiptap.Node {
     schema
   }) {
     return {
-      'Shift-Ctrl-9': tiptapCommands.toggleList(type, schema.nodes.list_item)
+      'Shift-Ctrl-7': tiptapCommands.toggleList(type, schema.nodes.list_item)
     };
   }
 
@@ -1173,6 +1173,15 @@ class TodoList extends tiptap.Node {
     schema
   }) {
     return () => tiptapCommands.toggleList(type, schema.nodes.todo_item);
+  }
+
+  keys({
+    type,
+    schema
+  }) {
+    return {
+      'Shift-Ctrl-9': tiptapCommands.toggleList(type, schema.nodes.todo_item)
+    };
   }
 
   inputRules({
