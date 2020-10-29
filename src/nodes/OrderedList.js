@@ -34,7 +34,7 @@ export default class OrderedList extends Node {
 
   keys({ type, schema }) {
     return {
-      'Shift-Ctrl-7': toggleList(type, schema.nodes.list_item),
+      'Shift-Ctrl-9': toggleList(type, schema.nodes.list_item),
     }
   }
 

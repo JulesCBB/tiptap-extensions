@@ -928,7 +928,7 @@
       schema
     }) {
       return {
-        'Shift-Ctrl-7': tiptapCommands.toggleList(type, schema.nodes.list_item)
+        'Shift-Ctrl-9': tiptapCommands.toggleList(type, schema.nodes.list_item)
       };
     }
 
@@ -1169,7 +1169,7 @@
     schema
   }) {
     return {
-      'Shift-Ctrl-9': tiptapCommands.toggleList(type, schema.nodes.todo_item)
+      '{}': tiptapCommands.toggleList(type, schema.nodes.todo_item)
     };
   }
 

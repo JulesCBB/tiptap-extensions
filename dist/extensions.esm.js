@@ -933,7 +933,7 @@ class OrderedList extends Node {
     schema
   }) {
     return {
-      'Shift-Ctrl-7': toggleList(type, schema.nodes.list_item)
+      'Shift-Ctrl-9': toggleList(type, schema.nodes.list_item)
     };
   }
 
@@ -1174,7 +1174,7 @@ class TodoList extends Node {
     schema
   }) {
     return {
-      'Shift-Ctrl-9': toggleList(type, schema.nodes.todo_item)
+      '{}': toggleList(type, schema.nodes.todo_item)
     };
   }
 

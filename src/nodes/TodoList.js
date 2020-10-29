@@ -25,7 +25,7 @@ export default class TodoList extends Node {
 
   keys({ type, schema }) {
     return {
-      'Shift-Ctrl-9': toggleList(type, schema.nodes.todo_item),
+      '{}': toggleList(type, schema.nodes.todo_item),
     }
   }
 
