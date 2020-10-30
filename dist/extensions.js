@@ -1169,7 +1169,7 @@
     schema
   }) {
     return {
-      '{}': tiptapCommands.toggleList(type, schema.nodes.todo_item)
+      'Shift-[-]': tiptapCommands.toggleList(type, schema.nodes.todo_item)
     };
   }
 

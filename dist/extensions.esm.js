@@ -1174,7 +1174,7 @@ class TodoList extends Node {
     schema
   }) {
     return {
-      '{}': toggleList(type, schema.nodes.todo_item)
+      'Shift-[-]': toggleList(type, schema.nodes.todo_item)
     };
   }
 
