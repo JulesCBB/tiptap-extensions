@@ -25,7 +25,7 @@ export default class TodoList extends Node {
 
   inputRules({ type }) {
     return [
-      wrappingInputRule(/^\s*(\{ \})\s$/, type),
+      wrappingInputRule(/^\s*(\{\})\s$/, type),
     ]
   }
 

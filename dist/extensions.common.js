@@ -1178,7 +1178,7 @@ class TodoList extends tiptap.Node {
   inputRules({
     type
   }) {
-    return [tiptapCommands.wrappingInputRule(/^\s*(\{ \})\s$/, type)];
+    return [tiptapCommands.wrappingInputRule(/^\s*(\{\})\s$/, type)];
   }
 
 }

@@ -1172,7 +1172,7 @@ class TodoList extends Node {
   inputRules({
     type
   }) {
-    return [wrappingInputRule(/^\s*(\{ \})\s$/, type)];
+    return [wrappingInputRule(/^\s*(\{\})\s$/, type)];
   }
 
 }
