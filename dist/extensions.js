@@ -1028,6 +1028,12 @@
       };
     }
 
+	  inputRules({
+	    type
+	  }) {
+	    return [wrappingInputRule(/^\s*(\[\])\s$/, type)];
+	  }
+
     get plugins() {
       return [...(this.options.resizable ? [prosemirrorTables.columnResizing()] : []), prosemirrorTables.tableEditing()];
     }

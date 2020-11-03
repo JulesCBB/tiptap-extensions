@@ -1033,6 +1033,12 @@ class Table extends Node {
     };
   }
 
+  inputRules({
+    type
+  }) {
+    return [wrappingInputRule(/^\s*(\[\])\s$/, type)];
+  }
+
   get plugins() {
     return [...(this.options.resizable ? [columnResizing()] : []), tableEditing()];
   }
