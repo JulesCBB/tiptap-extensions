@@ -23,15 +23,9 @@ export default class TodoList extends Node {
     return () => toggleList(type, schema.nodes.todo_item)
   }
 
-  keys({ type, schema }) {
-    return {
-      '{': toggleList(type, schema.nodes.todo_item),
-    }
-  }
-
   inputRules({ type }) {
     return [
-      wrappingInputRule(/^\s*(\[ \])\s$/, type),
+      wrappingInputRule(/^\s*(\{ \})\s$/, type),
     ]
   }
 

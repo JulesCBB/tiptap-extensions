@@ -1169,19 +1169,10 @@ class TodoList extends Node {
     return () => toggleList(type, schema.nodes.todo_item);
   }
 
-  keys({
-    type,
-    schema
-  }) {
-    return {
-      '{': toggleList(type, schema.nodes.todo_item)
-    };
-  }
-
   inputRules({
     type
   }) {
-    return [wrappingInputRule(/^\s*(\[ \])\s$/, type)];
+    return [wrappingInputRule(/^\s*(\{ \})\s$/, type)];
   }
 
 }

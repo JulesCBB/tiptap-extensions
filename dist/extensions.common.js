@@ -1175,19 +1175,10 @@ class TodoList extends tiptap.Node {
     return () => tiptapCommands.toggleList(type, schema.nodes.todo_item);
   }
 
-  keys({
-    type,s
-    schema
-  }) {
-    return {
-      '{': tiptapCommands.toggleList(type, schema.nodes.todo_item)
-    };
-  }
-
   inputRules({
     type
   }) {
-    return [tiptapCommands.wrappingInputRule(/^\s*(\[ \])\s$/, type)];
+    return [tiptapCommands.wrappingInputRule(/^\s*(\{ \})\s$/, type)];
   }
 
 }
